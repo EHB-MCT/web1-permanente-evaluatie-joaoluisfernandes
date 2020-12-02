@@ -87,7 +87,6 @@ main {
 
 #contact {
     height: 100%;
-
     background-color: #686E85;
     color: #F7F7FF;
     background: rgb(112, 196, 217);
@@ -104,16 +103,7 @@ main {
     margin-right: 5em;
 }
 
-.parallax5 {
-    background-image: url('media/kusa_wall.jpg');
-    height: 100%;
-    padding-top: 2em;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: translate(0%, 20%);
-}
+
 
 #why {
     color: #F7F7FF;
