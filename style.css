@@ -18,7 +18,7 @@ html {
 
 
 
-.parallax3 {
+.about {
     background-color: #fff6e3;
     height: 100%;
     background-size: cover;
@@ -72,8 +72,8 @@ h2 {
 header {
     position: absolute;
     z-index: 5;
-    top: 5em;
-    left: 2em;
+    top: 2.5em;
+    left: 10%;
     color: white;
     font-size: 3em;
     font-weight: 700;
@@ -129,7 +129,7 @@ main {
 
 footer {
     position: fixed;
-    background-color: #117396;
+    background-color: #70c4d9;
     opacity: 10%;
     bottom: 0;
     font-size: 15px;
@@ -145,7 +145,7 @@ footer:hover {
 }
 
 a:link {
-    color: #F7F7FF;
+    color: #0b0b00;
 }
 
 a:visited {
@@ -191,16 +191,20 @@ a:active {
 nav {
     z-index: 5;
     color: #0b0b0b;
+    font-size: 1em;
+    margin: 0 auto;
     position: absolute;
-    top: 55%;
-    left: 50%;
+    display: inline-block;
+    list-style-type: none;
     font-weight: 400;
-    text-decoration: none;
     transition: 0.3s;
+    top: 2%;
+    margin-left: 45%;
+
 }
 
 nav a {
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 #quote p+a {
