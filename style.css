@@ -19,7 +19,7 @@ html {
 
 
 .about {
-    background-color: #fff6e3;
+    background-color: #f7f7ff;
     height: 100%;
     background-size: cover;
 }
@@ -59,7 +59,7 @@ h2 {
 }
 
 .parallax4 {
-    background-image: url('media/live_wall.jpg');
+
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -85,14 +85,13 @@ main {
     height: 100%;
 }
 
-#quote {
+#contact {
     height: 100%;
 
     background-color: #686E85;
     color: #F7F7FF;
-    background: rgb(6, 140, 201);
-    background: linear-gradient(8deg, rgba(6, 140, 201, 1) 0%, rgba(255, 172, 32, 1) 100%);
-    padding-top: 10rem;
+    background: rgb(112, 196, 217);
+    background: linear-gradient(135deg, rgba(112, 196, 217, 1) 0%, rgba(247, 247, 255, 1) 96%) padding-top: 10rem;
     margin-left: auto;
     margin-right: auto;
     background-size: 100%;
@@ -145,11 +144,11 @@ footer:hover {
 }
 
 a:link {
-    color: #0b0b00;
+    color: #0b0b0050;
 }
 
 a:visited {
-    color: #F7F7FF;
+    color: #0c0c0c;
 }
 
 a:hover {
@@ -190,32 +189,20 @@ a:active {
 
 nav {
     z-index: 5;
-    color: #0b0b0b;
+    color: #0c0c0c;
     font-size: 1em;
-    margin: 0 auto;
     position: absolute;
-    display: inline-block;
-    list-style-type: none;
+
     font-weight: 400;
     transition: 0.3s;
     top: 2%;
-    margin-left: 45%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 
 }
 
 nav a {
-    /* text-decoration: none; */
-}
-
-#quote p+a {
-    text-align: right;
-    transition: 0.3s;
-    font-weight: 700;
-    margin-right: 5em;
-    display: block;
-
-}
-
-#quote p+a:hover {
-    color: #1DB954;
+    text-decoration: none;
+    margin: 15px;
 }
