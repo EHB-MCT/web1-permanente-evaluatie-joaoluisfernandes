@@ -85,18 +85,11 @@ main {
     height: 100%;
 }
 
-#contact {
+#instagram {
     height: 100%;
-    background-color: #686E85;
-    color: #F7F7FF;
     background: rgb(112, 196, 217);
     background: linear-gradient(135deg, rgba(112, 196, 217, 1) 0%, rgba(247, 247, 255, 1) 96%);
-    padding-top 10rem;
-    margin-left: auto;
-    margin-right: auto;
     background-size: 100%;
-    vertical-align: middle;
-    position: relative;
 }
 
 #quote p {
@@ -104,6 +97,15 @@ main {
     margin-right: 5em;
 }
 
+.taggbox-container {
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+}
+
+.taggbox-socialwall {
+    height: 100%;
+}
 
 
 
@@ -168,12 +170,31 @@ a:active {
     transition: 0.5s;
 }
 
-nav {
+.navbar {
+    background-color: #ffffff;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+
+}
+
+.navbar a {
+    float: right;
+    color: #0c0c0c;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+/* .navbar {
     z-index: 5;
     color: #0c0c0c;
     font-size: 1em;
     position: absolute;
-
     font-weight: 400;
     transition: 0.3s;
     top: 2%;
@@ -183,7 +204,7 @@ nav {
 
 }
 
-nav a {
+.navbar a {
     text-decoration: none;
     margin: 15px;
-}
+} */
