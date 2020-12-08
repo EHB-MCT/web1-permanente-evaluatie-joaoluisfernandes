@@ -20,8 +20,12 @@
   </header>
 
   <div class="navbar">
-    <a href="#bio">ABOUT</a>
-    <a href="#instagram">INSTAGRAM</a>
+    <a href="#default" id="logo">CompanyLogo</a>
+    <div id="navbar-links">
+      <a href="#bio">ABOUT</a>
+      <a href="#instagram">INSTAGRAM</a>
+    </div>
+
   </div>
 
   <main>
@@ -44,10 +48,33 @@
       </div>
     </div>
 
+    <div id="other">
+      bla bla bla
+    </div>
+
   </main>
   <footer>&copy; Copyright João Luís Fernandes • <a href="https://www.erasmushogeschool.be/en">EhB</a> • 2020
   </footer>
   <button id="btn"><a href="#top">&uarr;</a></button>
+
+  <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    //src======= https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp ========
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+  </script>
+
 </body>
 
 </html>

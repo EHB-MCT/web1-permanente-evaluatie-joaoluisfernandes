@@ -86,10 +86,11 @@ main {
 }
 
 #instagram {
-    height: 100%;
-    background: rgb(112, 196, 217);
-    background: linear-gradient(135deg, rgba(112, 196, 217, 1) 0%, rgba(247, 247, 255, 1) 96%);
-    background-size: 100%;
+    padding-right: 20vw;
+    padding-left: 20vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+
 }
 
 #quote p {
@@ -98,16 +99,20 @@ main {
 }
 
 .taggbox-container {
-    width: 100%;
-    height: 500px;
     overflow: auto;
+
 }
 
 .taggbox-socialwall {
     height: 100%;
 }
 
-
+other {
+    height: 100%;
+    background: rgb(112, 196, 217);
+    background: linear-gradient(135deg, rgba(112, 196, 217, 1) 0%, rgba(247, 247, 255, 1) 96%);
+    background-size: 100%;
+}
 
 footer {
     position: fixed;
@@ -170,7 +175,63 @@ a:active {
     transition: 0.5s;
 }
 
-.navbar {
+
+/* Create a sticky/fixed navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 90px 10px;
+    /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s;
+    /* Adds a transition effect when the padding is decreased */
+    position: fixed;
+    /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0;
+    /* At the top */
+    z-index: 99;
+}
+
+/* Style the navbar links */
+#navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Style the logo */
+#navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active/current link */
+#navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Display some links to the right */
+#navbar-links {
+    float: right;
+}
+
+
+
+
+/* .navbar {
     background-color: #ffffff;
 
     position: fixed;
@@ -188,7 +249,7 @@ a:active {
     text-decoration: none;
     font-weight: 400;
     transition: 0.3s;
-}
+} */
 
 /* .navbar {
     z-index: 5;
